@@ -60,7 +60,24 @@ https://templatemo.com/tm-611-maison-doree
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <p class="text-label hero-tagline">Artisan Gold Jewelry Since 1987</p>
+            <p class="text-label hero-tagline">
+
+            <?php
+                $hour = date('H');
+                if ($hour < 12) {
+                echo "<h3>Dobré ráno</h3>";
+                } elseif ($hour < 18) {
+                echo "<h3>Dobrý deň</h3>";
+                } else {
+                echo "<h3>Dobrý večer</h3>";
+                }
+            ?>
+
+
+
+
+
+            </p>
             <h1 class="heading-display hero-title">
                 Where Gold<br>Becomes <em>Art</em>
             </h1>
